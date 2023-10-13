@@ -1,0 +1,17 @@
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Helpers.deps.json
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Helpers.dll
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Helpers.pdb
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Models.dll
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Shared.dll
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Models.pdb
+E:\web-api-authentication\AuthWebApi\Helpers\bin\Debug\net7.0\Shared.pdb
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.csproj.AssemblyReference.cache
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.AssemblyInfoInputs.cache
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.AssemblyInfo.cs
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.csproj.CoreCompileInputs.cache
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.csproj.CopyComplete
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.dll
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\refint\Helpers.dll
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\Helpers.pdb
+E:\web-api-authentication\AuthWebApi\Helpers\obj\Debug\net7.0\ref\Helpers.dll

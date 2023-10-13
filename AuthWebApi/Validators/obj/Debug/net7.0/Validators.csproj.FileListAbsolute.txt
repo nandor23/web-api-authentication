@@ -1,0 +1,15 @@
+E:\web-api-authentication\AuthWebApi\Validators\bin\Debug\net7.0\Validators.deps.json
+E:\web-api-authentication\AuthWebApi\Validators\bin\Debug\net7.0\Validators.dll
+E:\web-api-authentication\AuthWebApi\Validators\bin\Debug\net7.0\Validators.pdb
+E:\web-api-authentication\AuthWebApi\Validators\bin\Debug\net7.0\Models.dll
+E:\web-api-authentication\AuthWebApi\Validators\bin\Debug\net7.0\Models.pdb
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.csproj.AssemblyReference.cache
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.GeneratedMSBuildEditorConfig.editorconfig
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.AssemblyInfoInputs.cache
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.AssemblyInfo.cs
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.csproj.CoreCompileInputs.cache
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.csproj.CopyComplete
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.dll
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\refint\Validators.dll
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\Validators.pdb
+E:\web-api-authentication\AuthWebApi\Validators\obj\Debug\net7.0\ref\Validators.dll

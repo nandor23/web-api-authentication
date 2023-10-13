@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "gg2k8lE2/uQliLQ/7iCUFlPh/iFXxfnr6S9UV6Yo6bd5nufEXDTcwCb15M3+zKFLD2aNnmxNS3oO0LMfItnPZg==",
+  "success": true,
+  "projectFilePath": "E:\\web-api-authentication\\AuthWebApi\\Helpers\\Helpers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.12\\microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.12\\microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.http\\2.1.34\\microsoft.aspnetcore.http.2.1.34.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.1\\microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.1.1\\microsoft.aspnetcore.webutilities.2.1.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.12\\microsoft.extensions.identity.core.7.0.12.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.12\\microsoft.extensions.identity.stores.7.0.12.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.objectpool\\2.1.1\\microsoft.extensions.objectpool.2.1.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.2\\microsoft.identitymodel.abstractions.7.0.2.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.2\\microsoft.identitymodel.jsonwebtokens.7.0.2.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.2\\microsoft.identitymodel.logging.7.0.2.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.2\\microsoft.identitymodel.tokens.7.0.2.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\microsoft.net.http.headers\\2.1.1\\microsoft.net.http.headers.2.1.1.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.2\\system.identitymodel.tokens.jwt.7.0.2.nupkg.sha512",
+    "C:\\Users\\Nandor Krizbai\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

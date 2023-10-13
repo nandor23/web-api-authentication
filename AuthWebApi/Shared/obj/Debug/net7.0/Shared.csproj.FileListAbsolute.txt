@@ -1,0 +1,12 @@
+E:\web-api-authentication\AuthWebApi\Shared\bin\Debug\net7.0\Shared.deps.json
+E:\web-api-authentication\AuthWebApi\Shared\bin\Debug\net7.0\Shared.dll
+E:\web-api-authentication\AuthWebApi\Shared\bin\Debug\net7.0\Shared.pdb
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.csproj.AssemblyReference.cache
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.AssemblyInfoInputs.cache
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.AssemblyInfo.cs
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.csproj.CoreCompileInputs.cache
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.dll
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\refint\Shared.dll
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\Shared.pdb
+E:\web-api-authentication\AuthWebApi\Shared\obj\Debug\net7.0\ref\Shared.dll
