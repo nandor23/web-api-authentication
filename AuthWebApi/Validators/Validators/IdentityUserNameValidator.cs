@@ -38,7 +38,7 @@ public class IdentityUserNameValidator<TUser> : IUserValidator<TUser> where TUse
             return IdentityResult.Failed(_describer.InvalidUserName(userName));
         }
 
-        if (await manager.FindByNameAsync(userName) != null)
+        if (await manager.FindByNameAsync(userName) is not null)
         {
             return IdentityResult.Failed(_describer.DuplicateUserName(userName));
         }
