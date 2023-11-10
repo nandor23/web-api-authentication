@@ -34,47 +34,71 @@ public class SignUpService : ISignUpService
 
     public async Task SignUpUserAsync(User user, string password)
     {
+        var userNameError = ExtractUserNameError(await _userNameValidator.ValidateAsync(_userManager, user));
+
+        if (userNameError is not null)
+        {
+            throw new SignUpException(userNameError);
+        }
 
         var encryptedEmail = _emailEncryptionHelper.EncryptEmail(user.Email!);
+        var emailError = ExtractEmailError(await _emailValidator.ValidateAsync(_userManager, user.Email!, encryptedEmail));
 
-        var userNameValidationResult = await _userNameValidator.ValidateAsync(_userManager, user);
-        var emailValidationResult = await _emailValidator.ValidateAsync(_userManager, user.Email!, encryptedEmail);
-        var passwordValidationResult = await _passwordValidator.ValidateAsync(_userManager, null!, password);
-
-        if (userNameValidationResult.Succeeded && emailValidationResult.Succeeded && passwordValidationResult.Succeeded)
+        if (emailError is not null)
         {
-            user.Email = encryptedEmail;
-            var result = await _userManager.CreateAsync(user, password);
-            if (result.Succeeded)
-            {
-                return;
-            }
-            throw new SignUpException("Account creation failed due to a server error");
+            throw new SignUpException(emailError);
         }
 
-        string? userNameMessage = null, emailMessage = null, passwordMessage = null;
+        var passwordError = ExtractPasswordError(await _passwordValidator.ValidateAsync(_userManager, null!, password));
 
-        var error = userNameValidationResult.Errors.FirstOrDefault();
+        if (passwordError is not null)
+        {
+            throw new SignUpException(passwordError);
+        }
+
+        // The validation has been successfully passed, and the account can now be created.
+        user.Email = encryptedEmail;
+        var result = await _userManager.CreateAsync(user, password);
+        if (result.Succeeded)
+        {
+            return;
+        }
+        throw new SignUpException("Account creation failed due to a server error");
+    }
+
+    private string? ExtractUserNameError(IdentityResult result)
+    {
+        var error = result.Errors.FirstOrDefault();
 
         if (error is not null && _errorCodes.IsUserNameErrorCode(error.Code))
-        {
-            userNameMessage = error.Description;
+        { 
+            return error.Description;
         }
 
-        error = emailValidationResult.Errors.FirstOrDefault();
+        return null;
+    }
+
+    private string? ExtractEmailError(IdentityResult result)
+    {
+        var error = result.Errors.FirstOrDefault();
 
         if (error is not null && _errorCodes.IsEmailErrorCode(error.Code))
         {
-            emailMessage = error.Description;
+            return error.Description;
         }
 
-        error = passwordValidationResult.Errors.FirstOrDefault();
+        return null;
+    }
+
+    private string? ExtractPasswordError(IdentityResult result)
+    {
+        var error = result.Errors.FirstOrDefault();
 
         if (error is not null && _errorCodes.IsPasswordErrorCode(error.Code))
         {
-            passwordMessage = error.Description;
+            return error.Description;
         }
 
-        throw new SignUpException(userNameMessage, emailMessage, passwordMessage);
+        return null;
     }
 }

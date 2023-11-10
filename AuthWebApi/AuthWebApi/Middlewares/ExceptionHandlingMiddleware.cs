@@ -25,7 +25,7 @@ public class ExceptionHandlingMiddleware
         {
             await _next(context);
         }
-        catch (BaseException exception)
+        catch (Exception exception)
         {
             switch (exception)
             {
@@ -41,10 +41,13 @@ public class ExceptionHandlingMiddleware
                 case RepositoryException:
                     context.Response.StatusCode = StatusCodes.Status500InternalServerError;
                     break;
+                default:
+                    context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+                    return;
             }
 
             context.Response.ContentType = "application/json";
-            await context.Response.WriteAsync(JsonConvert.SerializeObject(new { exception.Errors }, _jsonSettings));
+            await context.Response.WriteAsync(JsonConvert.SerializeObject(new { Error = exception.Message }, _jsonSettings));
         }
     }
 }
