@@ -9,7 +9,7 @@ public class CustomIdentityErrorDescriber : IdentityErrorDescriber
         return new IdentityError
         {
             Code = nameof(InvalidUserName),
-            Description = "Username can only include letters, numbers, underscores ( _ ), and periods ( . )"
+            Description = "Invalid username format"
         };
     }
 
@@ -63,7 +63,7 @@ public class CustomIdentityErrorDescriber : IdentityErrorDescriber
         return new IdentityError
         {
             Code = nameof(InvalidPassword),
-            Description = "Password must include letters, a number, and a special character"
+            Description = "Invalid password format"
         };
     }
 

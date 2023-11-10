@@ -1,10 +1,6 @@
 ﻿namespace Shared.Exceptions;
-public class ServiceException : BaseException
+public class ServiceException : Exception
 {
-    public ServiceException(object errors) : base(errors)
-    {
-    }
-
     public ServiceException(string message) : base(message)
     {
     }
