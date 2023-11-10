@@ -24,7 +24,7 @@ public class EmailValidator<TUser> : IEmailValidator<TUser> where TUser : User
             return IdentityResult.Failed(_describer.InvalidEmail(email));
         }
 
-        if (_options.User.RequireUniqueEmail && await manager.FindByEmailAsync(encryptedEmail) != null)
+        if (_options.User.RequireUniqueEmail && await manager.FindByEmailAsync(encryptedEmail) is not null)
         {
             return IdentityResult.Failed(_describer.DuplicateEmail(email));
         }

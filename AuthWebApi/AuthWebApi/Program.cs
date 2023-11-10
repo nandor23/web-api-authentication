@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Models;
 using Newtonsoft.Json;
@@ -66,11 +67,8 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 });
 
 // Identity with custom classes
-builder.Services.AddScoped<CustomIdentityErrorDescriber>();
-builder.Services.AddScoped<CustomIdentityOptions>(provider =>
+builder.Services.Configure<CustomIdentityOptions>(options =>
 {
-    var options = new CustomIdentityOptions();
-
     // User settings
     options.User.MinUserNameLength = 3;
     options.User.MaxUserNameLength = 30;
@@ -86,9 +84,10 @@ builder.Services.AddScoped<CustomIdentityOptions>(provider =>
     options.Password.RequireNonAlphanumeric = true;
     options.Password.RequireLowercase = false;
     options.Password.RequireUppercase = false;
-
-    return options;
 });
+
+builder.Services.AddScoped<CustomIdentityErrorDescriber>();
+builder.Services.AddScoped<CustomIdentityOptions>(provider => provider.GetRequiredService<IOptions<CustomIdentityOptions>>().Value);
 builder.Services.AddScoped<ErrorCodesCategory>();
 
 builder.Services
